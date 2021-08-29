@@ -1,15 +1,15 @@
 {
-  "name": "aws-billing-notification-bot",
+  "name": "aws-cost-notification-bot",
   "version": "0.1.0",
   "bin": {
-    "aws-billing-notification-bot": "bin/aws-billing-notification-bot.js"
+    "aws-cost-notification-bot": "bin/aws-cost-notification-bot.js"
   },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "local-invoke": "sam-beta-cdk local invoke AwsBillingNotificationBotStack/notification-bot"
+    "local-invoke": "sam-beta-cdk local invoke AwsCostNotificationBotStack/notification-bot"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.118.0",

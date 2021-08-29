@@ -9,7 +9,7 @@ import { Effect, PolicyStatement } from '@aws-cdk/aws-iam'
 
 const WEBHOOK_URL = process.env.WEBHOOK_URL!
 
-export class AwsBillingNotificationBotStack extends cdk.Stack {
+export class AwsCostNotificationBotStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
