@@ -1,14 +1,17 @@
-# Welcome to your CDK TypeScript project!
+# aws-cost-notification-bot
 
-This is a blank project for TypeScript development with CDK.
+discordにAWSのコストを毎日投稿するBOTです。  
+AWS CDKを利用してLambdaから世界標準時0時に以下のような画像が投稿されます。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-## Useful commands
+<img width="474" alt="スクリーンショット 2021-08-30 0 21 26" src="https://user-images.githubusercontent.com/5736661/131255795-84bc4b0c-dbad-48d4-9c39-2818b4cec8ae.png">
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+# 利用方法
+
+※ CDKコマンドが利用できる必要があります(参考: https://docs.aws.amazon.com/cdk/latest/guide/cli.html)
+
+
+```
+cdk bootstrap
+WEBHOOK_URL=[YOUR_DISCORD_WEDHOOK_URL] cdk deploy
+```
